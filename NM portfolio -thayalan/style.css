@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #1f242d;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10%;
+}
+
+.logo{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 27px;
+    cursor: default;
+    animation: slideleft 1s ease forwards;
+    opacity: 0;
+}
+
+.navbar a{
+    display: inline-block;
+ text-decoration: none;
+ color: #fff;
+ padding: 0px 16px;
+ font-weight: 600;
+ transition: 0.3s all;
+ animation: navMenu 1s ease forwards;
+ animation-delay: calc(0.2s * var(--i));
+ opacity: 0;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #0ef;
+
+}
+
+
+.hero-container {
+    display: flex;
+    padding: 15px 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-side h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+   letter-spacing: 1px;
+}
+
+.info-side h1{
+    font-size: 75px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    animation: slideright 0.5s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.info-side h3 span{
+    color: #0ef;
+}
+
+.part-1{
+    animation: part1 1s ease forwards;
+    opacity: 0;
+}
+.part-2{
+    animation: part2 1s ease forwards;
+    opacity: 0;
+}
+
+p{
+    line-height: 27px;
+    margin: 18px 0px 40px 0px;
+    animation: slideleftp 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1.2s;
+}
+
+.hero-img img{
+    width: 200px;
+    animation: zoomin 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.download-btn{
+    background-color: #0ef;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1px;
+}
+.download-btn:hover {
+    background-color: #0ef;
+}
+button{
+    background-color: #0ef;
+    margin-top: 50px;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #0ef;
+    animation: slideup 1s ease forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+button:hover{
+    box-shadow: none;
+}
+@keyframes slideleft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes navMenu {
+    0%{
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+@keyframes part1 {
+    0%{
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+@keyframes part2 {
+    0%{
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}@keyframes slideright {
+    0%{
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+@keyframes slideleftp {
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+@keyframes slideup {
+    0%{
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+@keyframes zoomin {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 25px 10%;
+    margin: 20px 0px;
+    background-color: #323946;
+    height: 100vh;
+}
+
+
+.about-img{
+    width: 100vw;
+}
+
+.heading{
+    text-align: left;
+    font-size: 60px;
+}
+
+.about-content h3 {
+    font-size: 1.2rem;
+}
+
+.about-content p{
+    line-height: 20px;
+    margin: 1rem 0 1rem;
+    font-size: 15px;
+}
+.Skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 25px 10%;
+    margin: 30px 0px;
+    background-color: #323946;
+    height: 120vh;
+}
+.heading{
+    text-align: center;
+    font-size: 50px;
+}
+
+.Skills-content h3 {
+    font-size: 1.5rem;
+}
+.Skills-content ul li {
+    line-height: 27px;
+    margin: 2rem 0 1rem;
+    font-size: 25px;
+}
+.Awards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 25px 10%;
+    margin: 30px 0px;
+    background-color: #323946;
+    height: 120vh;
+}
+.heading{
+    text-align: left;
+    font-size: 50px;
+}
+
+.Awards-content h3 {
+    font-size: 1.5rem;
+}
+
+.Awards-content ul li{
+    line-height: 27px;
+    margin: 2rem 0 1rem;
+    font-size: 25px;
+}
+.Education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 25px 10%;
+    margin: 30px 0px;
+    background-color: #323946;
+    height: 120vh;
+}
+.heading{
+    text-align: left;
+    font-size: 50px;
+}
+
+.Education-content h3 {
+    font-size: 1.5rem;
+}
+
+.Education-content ul li{
+    line-height: 27px;
+    margin: 2rem 0 1rem;
+    font-size: 25px;
+}
+.Contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #323946;
+}
+.Contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+.Contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.Contact .content p {
+    font-weight: 300;
+    color: #fff;
+}
+.Container {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 30px;
+}
+.Container .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.Container .contactinfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.Container .contactinfo .box .icon {
+        min-width: 60px;
+        height: 60px;
+        background: #0ef;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+}
+.Container .contactinfo .box .icon {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.Container .contactinfo .box .icon h3 {
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactform {
+       width: 100%;
+       padding: 20px;
+       background: skyblue;
+}
+.contactform h2 {
+    font-size: 50px;
+    color: #1f242d;
+    font-weight: 500;
+}
+.contactform .inputbox {
+    width: 100px;
+    text-align: center;
+    margin-top: 10px;
+}
+.contactform .inputbox input, .contactform .inputbox textarea {
+    width: 350px;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:  10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+
+
